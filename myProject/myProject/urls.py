@@ -19,5 +19,6 @@ from myApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'), # 新增路由映射
+    # path('', views.index, name='index'), # 新增路由映射
+    path('', views.detail, name='detail'),
 ]
