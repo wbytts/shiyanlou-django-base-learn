@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
 
 # Application definition
 
+# myProject/settings.py
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myApp'
+    # 'myApp', 这一注释掉，不注释掉会因重复而报错
+    'myApp.apps.MyappConfig',
 ]
 
 MIDDLEWARE = [
